@@ -24,7 +24,7 @@ const AddStaff = () => {
     const token = localStorage.getItem("authToken");
     e.preventDefault();
     try {
-      const response = await fetch(`${API_URL}/api/user`, {
+      const response = await fetch(`${API_URL}/api/add-staff.`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

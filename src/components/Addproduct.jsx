@@ -41,7 +41,7 @@ const AddProduct = () => {
     if (Object.keys(newErrors).length > 0) return;
 
     try {
-      const response = await fetch(`${API_URL}/api/products`, {
+      const response = await fetch(`${API_URL}/api/product`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
